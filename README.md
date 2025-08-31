@@ -24,6 +24,9 @@ cd healthcare
      docker compose up -d --build
      GO to the container 
      docker compose exec -it healthcare-app bash
+     Run below command to fix permission in container.
+     chown -R www-data:www-data storage bootstrap/cache
+     chmod -R 775 storage bootstrap/cache
 
 5, composer install
     php artisan migrate
