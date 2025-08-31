@@ -1,0 +1,19 @@
+# Laravel
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+.env
+
+# Laravel cache
+bootstrap/cache/*.php
+*.log
+
+# Docker
+docker-compose.override.yml
+.docker/
+*.pid
+
+# OS
+.DS_Store
+Thumbs.db
